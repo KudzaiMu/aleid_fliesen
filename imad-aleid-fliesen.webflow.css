@@ -1,0 +1,2068 @@
+:root {
+  --brand-colour-1: #595957;
+  --paragraph-colour: rgba(0, 0, 0, .58);
+  --white: white;
+  --black: black;
+}
+
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.w-layout-layout {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  padding: 20px;
+}
+
+.w-layout-cell {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.w-checkbox {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  display: block;
+}
+
+.w-checkbox:before {
+  content: " ";
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox:after {
+  content: " ";
+  clear: both;
+  grid-area: 1 / 1 / 2 / 2;
+  display: table;
+}
+
+.w-checkbox-input {
+  float: left;
+  margin: 4px 0 0 -20px;
+  line-height: normal;
+}
+
+.w-checkbox-input--inputType-custom {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-checked {
+  background-color: #3898ec;
+  background-image: url('https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: #3898ec;
+}
+
+.w-checkbox-input--inputType-custom.w--redirected-focus {
+  box-shadow: 0 0 3px 1px #3898ec;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+body {
+  color: #333;
+  flex-flow: column;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.ber-uns-link {
+  cursor: pointer;
+  margin-top: 0;
+  font-family: Droid Sans, sans-serif;
+  text-decoration: none;
+}
+
+.ber-uns-link.w--current {
+  pointer-events: auto;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.leistungen-link {
+  cursor: pointer;
+  font-family: Droid Sans, sans-serif;
+}
+
+.leistungen-link.w--current {
+  text-decoration: none;
+}
+
+.kontakt-link {
+  font-family: Droid Sans, sans-serif;
+}
+
+.kontakt-link.w--current {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container-navbar {
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+  max-width: none;
+}
+
+.fliesen {
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  margin-top: -99px;
+  display: inline-block;
+}
+
+.nav-menu {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.einleitung {
+  background-color: var(--brand-colour-1);
+  height: 350px;
+}
+
+.einleitung-absatz {
+  color: rgba(255, 252, 252, .77);
+  text-align: center;
+  padding: 15px 0;
+  font-family: Droid Serif, serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.einleitung-projekte-div {
+  text-align: left;
+  background-color: #fff;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 5px;
+  display: block;
+  position: static;
+}
+
+.einleitung-berschrift {
+  color: #fff;
+  text-align: center;
+  font-family: Droid Sans, sans-serif;
+}
+
+.ber-uns-absatz {
+  color: rgba(255, 255, 255, .71);
+  text-align: center;
+  font-family: Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.ber-uns-berschrift {
+  color: rgba(255, 255, 255, .7);
+  text-align: center;
+  font-family: Droid Serif, serif;
+}
+
+.ber-uns {
+  background-color: var(--brand-colour-1);
+  height: 350px;
+  padding-top: 79px;
+}
+
+.einleitung-container {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+}
+
+.container-2 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.conatainer-navbar {
+  width: 100%;
+  min-width: 90%;
+}
+
+.image {
+  width: 120px;
+  height: 100px;
+}
+
+.nav-menu-2 {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.navbar-2 {
+  z-index: 99999;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.ber-uns-container {
+  margin-top: -29px;
+}
+
+.unsere-leistungen-container {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+}
+
+.unsere-leistungen-absatz {
+  color: var(--paragraph-colour);
+  text-align: center;
+  font-family: Droid Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.image-2 {
+  text-align: left;
+}
+
+.paragraph-4 {
+  color: var(--paragraph-colour);
+  text-align: center;
+  flex-flow: row;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.image-3 {
+  width: 100%;
+}
+
+.image-4, .image-5, .image-6, .image-7, .image-8 {
+  width: 90px;
+}
+
+.image-9 {
+  width: 250px;
+  margin-bottom: -95px;
+  margin-left: 20px;
+  padding-bottom: 0;
+}
+
+.image-10, .image-11 {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.paragraph-5 {
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.image-12, .image-13 {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.quick-stack {
+  margin-top: 10px;
+}
+
+.paragraph-6, .paragraph-7, .paragraph-8, .paragraph-9 {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.image-14 {
+  width: 150px;
+  height: 200px;
+  margin-bottom: -80px;
+}
+
+.image-15 {
+  width: 150px;
+  margin-bottom: 19px;
+}
+
+.image-16 {
+  width: 150px;
+  margin-bottom: -10px;
+}
+
+.image-17 {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.image-18 {
+  width: 150px;
+}
+
+.paragraph-10, .paragraph-11, .paragraph-12, .paragraph-13, .paragraph-14 {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+}
+
+.boden--und-wandfliesen, .renovierungen, .b-der, .treppen {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Droid Serif, serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.unsere-leistungen-bilder {
+  width: 75%;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.unsere-leistungen-bilder.fliesenverkauf {
+  width: auto;
+  margin-top: -109px;
+  margin-bottom: 80px;
+}
+
+.image-20 {
+  margin-bottom: 30px;
+}
+
+.unsere-lesitungen-berschrift {
+  font-family: Droid Serif, serif;
+}
+
+.projekte-section {
+  background-color: var(--brand-colour-1);
+  height: 1350px;
+  font-weight: 700;
+}
+
+.leistungen {
+  grid-column-gap: 79px;
+  grid-row-gap: 50px;
+  margin-top: 60px;
+}
+
+.einleitung-projekte-heading {
+  color: var(--white);
+  text-align: center;
+  font-family: Droid Serif, serif;
+}
+
+.projekte-continer {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  display: flex;
+}
+
+.einleitung-projekte {
+  color: rgba(255, 252, 252, .73);
+  text-align: center;
+  margin-top: 10px;
+  font-family: Droid Sans, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.image-21 {
+  z-index: 9999;
+  position: absolute;
+}
+
+.logo-hero {
+  width: 70vw;
+  position: absolute;
+  top: auto;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.logo-animation {
+  justify-content: center;
+  align-items: center;
+  width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 0;
+  display: block;
+  position: absolute;
+}
+
+.fliesen-div {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.cell, .cell-2, .cell-3, .cell-4 {
+  justify-content: center;
+  align-items: center;
+}
+
+.rezensionen-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1440940px;
+  display: flex;
+}
+
+.carousell-item {
+  flex: none;
+}
+
+.slider {
+  background-color: rgba(221, 221, 221, 0);
+  width: 100%;
+  overflow: hidden;
+}
+
+.rezensionen-slider {
+  background-color: rgba(221, 221, 221, 0);
+  width: 100%;
+}
+
+.rezension {
+  color: rgba(51, 51, 51, .78);
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Droid Serif, serif;
+  font-size: 20px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.kundenstimenn-berschrift {
+  color: var(--brand-colour-1);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.left-arrow {
+  color: var(--black);
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.right-arrow {
+  color: #000;
+}
+
+.footer-light {
+  border-bottom: 1px solid #e4ebf3;
+  padding: 80px 30px 40px;
+  position: relative;
+}
+
+.container-7 {
+  width: 100%;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-wrapper-two {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer-block-two {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.footer-link-two {
+  color: #1a1b1f;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.footer-link-two:hover {
+  color: rgba(26, 27, 31, .75);
+}
+
+.footer-form {
+  width: 315px;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.footer-form-block {
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  display: flex;
+}
+
+.footer-form-field {
+  border: 1px solid #a6b1bf;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 48px;
+  margin-bottom: 0;
+  padding: 12px 16px;
+  font-size: 14px;
+  line-height: 22px;
+  transition: all .2s;
+}
+
+.footer-form-field:hover, .footer-form-field:focus {
+  border-color: #76879d;
+}
+
+.footer-form-field::placeholder {
+  color: rgba(26, 27, 31, .8);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-form-submit {
+  background-color: #1a1b1f;
+  background-image: url('../images/');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: 50px;
+  height: 48px;
+  transition: all .2s;
+}
+
+.footer-form-submit:hover {
+  background-color: #3a4554;
+}
+
+.footer-divider-two {
+  background-color: #e4ebf3;
+  width: 100%;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-bottom {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.footer-copyright {
+  color: #3a4554;
+}
+
+.footer-social-block-two {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+  margin-left: -12px;
+  display: flex;
+}
+
+.footer-social-link {
+  margin-left: 12px;
+}
+
+.slide {
+  font-family: Droid Sans, sans-serif;
+}
+
+.section-2 {
+  background-color: var(--white);
+  margin-top: 31px;
+}
+
+.heading-2 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Droid Serif, serif;
+  font-size: 36px;
+  display: flex;
+}
+
+.form-block {
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  display: flex;
+}
+
+.submit-button {
+  color: var(--black);
+  background-color: #fbba28;
+  border-radius: 9px;
+  font-family: Droid Serif, serif;
+  font-weight: 700;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, .2);
+}
+
+.impressum-datenschutz {
+  color: #000;
+  font-family: Droid Sans, sans-serif;
+  text-decoration: none;
+}
+
+.logo-footer {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  background-color: var(--white);
+  -webkit-text-fill-color: inherit;
+  background-clip: border-box;
+  margin-top: auto;
+  position: relative;
+}
+
+.div-footer {
+  grid-column-gap: 200px;
+  grid-row-gap: 200px;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.div-kontakt {
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  display: flex;
+}
+
+.div-impressum-datenschutz {
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.field-label {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Droid Sans, sans-serif;
+  display: flex;
+}
+
+.slider-3 {
+  background-color: rgba(221, 221, 221, 0);
+}
+
+.slider-4 {
+  background-color: rgba(221, 221, 221, 0);
+  height: 600px;
+}
+
+.projekte-grid {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-flow: column;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  display: grid;
+}
+
+.projektbilder {
+  aspect-ratio: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.paragraph-16 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.paragraph-17 {
+  text-align: left;
+}
+
+.impressum-text {
+  font-family: Droid Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.impressum-heading {
+  font-family: Droid Serif, serif;
+}
+
+.paragraph-18 {
+  font-size: 16px;
+}
+
+.datenschutz-heading {
+  font-family: Droid Serif, serif;
+}
+
+.datenschutz-text, .text-block, .text-block-2, .text-block-3 {
+  font-family: Droid Sans, sans-serif;
+}
+
+.un {
+  align-self: center;
+  width: 60%;
+  margin-top: -86px;
+}
+
+.materialverkauf {
+  text-align: left;
+  align-self: center;
+  margin-top: -200px;
+  font-family: Droid Serif, serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.unsere-leistung-seite-berschrift {
+  justify-content: center;
+  align-items: center;
+  font-family: Droid Serif, serif;
+  display: flex;
+}
+
+.unsere-leistungen-seite-absatz {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Droid Sans, sans-serif;
+  font-size: 16px;
+  display: flex;
+}
+
+.unsere-leistungen-seite-bilder {
+  object-fit: cover;
+  max-width: 300px;
+  height: 450px;
+  overflow: hidden;
+}
+
+.image-23, .uns {
+  max-width: 300px;
+}
+
+.unsere-leistungen-seite-grid {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.link-block {
+  flex-flow: column;
+  display: flex;
+}
+
+.link-zu-leistungen-seite, .link-block-3, .link-block-4 {
+  display: flex;
+}
+
+.link-block-5 {
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.heading-3 {
+  text-align: center;
+  font-family: Droid Serif, serif;
+}
+
+.materialverkauf-absatz {
+  text-align: center;
+  font-family: Droid Sans, sans-serif;
+  line-height: 1.4;
+}
+
+.materialverkauf-berschrift {
+  text-align: center;
+  font-family: Droid Serif, serif;
+}
+
+.slide-2, .slide-3, .slide-4, .slide-5 {
+  font-family: Droid Sans, sans-serif;
+}
+
+.html-embed {
+  margin-bottom: 80px;
+  display: block;
+}
+
+.cookie-modal_button-wrap {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  background-color: #f3f7f2;
+  border-radius: 0 0 .25rem .25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  display: flex;
+}
+
+.cookie-modal_button-wrap.is-small {
+  justify-content: flex-start;
+  padding: 1.5rem;
+}
+
+.cookie-modal_link {
+  transition: color .15s cubic-bezier(.25, .46, .45, .94);
+}
+
+.cookie-modal_closebutton {
+  z-index: 5;
+  cursor: pointer;
+  background-color: #f3f7f2;
+  border-radius: .25rem;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1.25rem 1.25rem -2.5rem auto;
+  transition: background-color .2s cubic-bezier(.25, .46, .45, .94);
+  display: flex;
+  position: relative;
+}
+
+.cookie-modal_content-wrap {
+  padding: 1.75rem 2rem;
+}
+
+.cookie-modal_content-wrap.is-small {
+  padding: 1.5rem;
+}
+
+.cookie-popup_component {
+  z-index: 9500;
+  max-width: 25rem;
+  position: fixed;
+  top: auto;
+  bottom: 1.25rem;
+  left: auto;
+  right: 1.25rem;
+}
+
+.cookie-modal_styles {
+  display: none;
+}
+
+.cookie-modal_component {
+  background-color: #fff;
+  border-radius: .25rem;
+  flex-direction: column;
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .9375rem;
+  line-height: 1.4;
+  display: flex;
+  position: relative;
+  box-shadow: 0 4px 1rem rgba(38, 41, 38, .05);
+}
+
+.screenreader-only {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.cookie-modal_title {
+  margin-bottom: .1875em;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cookie-modal_title.is-small {
+  font-size: 1.1875rem;
+}
+
+.cookie-modal_closebutton_line {
+  background-color: #515750;
+  width: 1rem;
+  height: 2px;
+  position: absolute;
+}
+
+.cookie-modal_closebutton_line.is-right {
+  transform: rotate(-45deg);
+}
+
+.cookie-modal_closebutton_line.is-left {
+  transform: rotate(45deg);
+}
+
+.cookie-modal_button {
+  color: #fff;
+  text-align: center;
+  background-color: #515750;
+  border-radius: .25rem;
+  padding: .875em 1.5em 1rem;
+  font-size: .9375rem;
+  text-decoration: none;
+  transition: color .2s cubic-bezier(.25, .46, .45, .94), background-color .2s cubic-bezier(.25, .46, .45, .94);
+}
+
+.cookie-modal_button:hover {
+  background-color: #262926;
+}
+
+.cookie-modal_button.is-secondary {
+  color: #515750;
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 0;
+  padding-right: 0;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.cookie-modal_button.is-secondary:hover {
+  text-decoration: underline;
+}
+
+.fs-cc-prefs_space-small {
+  margin-bottom: .75rem;
+}
+
+.fs-cc-prefs_component {
+  z-index: 997;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  padding: 2rem;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.fs-cc-banner_close {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 999rem;
+  margin-left: .75rem;
+  padding: .625rem;
+  box-shadow: 1px 1px 12px rgba(0, 0, 0, .1);
+}
+
+.fs-cc-prefs_checkbox {
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+  border: 1px solid #000;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.fs-cc-prefs_content {
+  height: 100%;
+  padding: 2.5rem 2rem;
+  overflow: scroll;
+}
+
+.set-all-components-to-display-none-and-use-this-div-to-create-a-symbol {
+  display: block;
+}
+
+.fs-cc-prefs_close {
+  z-index: 1;
+  color: #333;
+  cursor: pointer;
+  background-color: #f5f6ff;
+  border-radius: 100%;
+  padding: .625rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  position: absolute;
+  top: -.75rem;
+  bottom: auto;
+  left: auto;
+  right: -.75rem;
+  box-shadow: -1px 1px 12px rgba(51, 51, 51, .1);
+}
+
+.fs-cc-manager_trigger {
+  display: none;
+}
+
+.fs-cc-manager_icon {
+  border: 1px solid rgba(0, 0, 0, 0);
+  width: 2rem;
+  height: 2rem;
+  display: block;
+}
+
+.fs-cc-banner_text-link {
+  border: 1px solid var(--black);
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.fs-cc-banner_buttons-wrapper {
+  flex-direction: row;
+  flex: none;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  grid-auto-columns: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.fs-cc-manager_button {
+  color: #333;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 999rem;
+  flex-direction: column;
+  padding: .625rem;
+  transition: color .2s;
+  display: flex;
+}
+
+.fs-cc-manager_button:hover {
+  color: #4353ff;
+}
+
+.fs-cc-prefs_toggle-wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  display: flex;
+}
+
+.fs-cc-prefs_option {
+  border-bottom: 1px solid rgba(51, 51, 51, .15);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fs-cc-prefs_overlay {
+  z-index: -1;
+  background-color: rgba(3, 5, 36, .6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.fs-cc-prefs_label {
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.fs-cc-banner_trigger {
+  display: none;
+}
+
+.fs-cc-prefs_button {
+  border: 2px solid var(--black);
+  background-color: var(--black);
+  border-radius: 999rem;
+  margin-right: .5rem;
+  padding: .625rem 1.5rem;
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.fs-cc-prefs_button.fs-cc-button-alt {
+  color: var(--black);
+  background-color: #fff;
+  border-color: #000;
+}
+
+.fs-cc-banner_text {
+  color: #616161;
+  margin-right: 1.5rem;
+}
+
+.fs-cc-banner_close-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.fs-cc-prefs_text {
+  color: var(--black);
+  font-size: .75rem;
+}
+
+.fs-cc-prefs_toggle {
+  background-color: #fff;
+  border-radius: 999px;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.fs-cc-banner_container {
+  align-items: center;
+  width: 100%;
+  max-width: 62.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.fs-cc-manager_component {
+  z-index: 999;
+  display: block;
+  position: fixed;
+  top: auto;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: auto;
+}
+
+.fs-cc-prefs_form {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 36rem;
+  height: 100%;
+  max-height: 70vh;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.fs-cc-prefs_submit-hide {
+  display: none;
+}
+
+.fs-cc-prefs_buttons-wrapper {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  margin-right: -.5rem;
+  display: flex;
+}
+
+.fs-cc-prefs_close-icon {
+  color: #021a7c;
+  width: 1rem;
+  height: 1rem;
+}
+
+.fs-cc-prefs_checkbox-field {
+  background-color: #ccc;
+  border-radius: 999rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 2.75rem;
+  height: 1.5rem;
+  margin-bottom: 0;
+  padding: .125rem;
+  display: flex;
+  position: relative;
+}
+
+.fs-cc-prefs_space-medium {
+  margin-bottom: 2.5rem;
+}
+
+.fs-cc-prefs_trigger {
+  display: none;
+}
+
+.fs-cc-banner_button {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 999rem;
+  min-width: 8.75rem;
+  margin-left: 1rem;
+  padding: .625rem 1.25rem;
+  font-size: 1rem;
+}
+
+.fs-cc-banner_button.fs-cc-button-alt {
+  color: #000;
+  background-color: #f5f5f5;
+  border-color: #000;
+}
+
+.fs-cc-prefs_title {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.fs-cc-banner_component {
+  z-index: 998;
+  background-color: #f5f6ff;
+  border-top: 1px solid rgba(67, 83, 255, .16);
+  padding: 1.5rem 2rem;
+  display: block;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.fs-cc-prefs_checkbox-label {
+  display: none;
+}
+
+.success-message {
+  background-color: #a1ec9b;
+}
+
+.telefonnumer {
+  text-align: center;
+}
+
+.telefonnummer-input, .anliegen, .mail-adresse, .name {
+  color: var(--black);
+}
+
+@media screen and (max-width: 991px) {
+  .fliesen {
+    height: 550px;
+  }
+
+  .nav-menu {
+    background-color: #000;
+  }
+
+  .ber-uns-absatz {
+    font-size: 16px;
+  }
+
+  .ber-uns-berschrift {
+    font-size: 28px;
+  }
+
+  .ber-uns {
+    height: 300px;
+    padding-top: 54px;
+  }
+
+  .nav-menu-2 {
+    margin-top: 0;
+  }
+
+  .unsere-leistungen-absatz {
+    font-size: 16px;
+  }
+
+  .boden--und-wandfliesen {
+    text-align: center;
+    font-size: 28px;
+    line-height: 1;
+  }
+
+  .renovierungen {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .b-der {
+    font-size: 28px;
+  }
+
+  .treppen {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .unsere-leistungen-bilder {
+    width: 70%;
+  }
+
+  .unsere-leistungen-bilder.fliesenverkauf {
+    max-width: 80%;
+    display: block;
+  }
+
+  .unsere-lesitungen-berschrift {
+    font-size: 28px;
+  }
+
+  .projekte-section {
+    height: 1200px;
+  }
+
+  .einleitung-projekte-heading {
+    font-size: 28px;
+  }
+
+  .einleitung-projekte {
+    font-size: 16px;
+  }
+
+  .logo-animation {
+    width: 490px;
+  }
+
+  .rezension, .rezension.tobias, .rezension.sw, .rezension.franz, .rezension.bernd {
+    font-size: 16px;
+  }
+
+  .kundenstimenn-berschrift {
+    font-size: 28px;
+  }
+
+  .container-7 {
+    max-width: 728px;
+  }
+
+  .footer-wrapper-two {
+    flex-wrap: wrap;
+  }
+
+  .footer-form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .footer-form-container {
+    max-width: 350px;
+  }
+
+  .heading-2 {
+    font-size: 30px;
+  }
+
+  .footer {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .div-footer {
+    flex-flow: row;
+  }
+
+  .container-footer {
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+
+  .projektbilder.erste-reihe, .projektbilder.zweite-reihe, .projektbilder.dritte-reihe {
+    height: 280px;
+  }
+
+  .menu-button-2 {
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .impressum-body {
+    overflow: visible;
+  }
+
+  .materialverkauf {
+    font-size: 28px;
+  }
+
+  .unsere-leistung-seite-berschrift {
+    font-size: 34px;
+  }
+
+  .unsere-leistungen-seite-absatz {
+    font-size: 14px;
+  }
+
+  .unsere-leistungen-seite-bilder {
+    width: 300px;
+    height: 375px;
+  }
+
+  .unsere-leistungen-seite-grid {
+    margin-left: 22px;
+  }
+
+  .materialverkauf-berschrift {
+    font-size: 34px;
+  }
+
+  .fs-cc-banner_buttons-wrapper {
+    margin-top: 1rem;
+  }
+
+  .fs-cc-banner_text {
+    margin-right: 0;
+  }
+
+  .fs-cc-banner_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fliesen {
+    height: 350px;
+  }
+
+  .ber-uns-absatz {
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .ber-uns-berschrift {
+    font-size: 24px;
+  }
+
+  .ber-uns {
+    height: 250px;
+    padding-top: 30px;
+  }
+
+  .nav-menu-2 {
+    margin-top: 0;
+  }
+
+  .unsere-leistungen-absatz {
+    font-size: 14px;
+  }
+
+  .boden--und-wandfliesen, .renovierungen, .b-der, .treppen {
+    font-size: 24px;
+  }
+
+  .unsere-leistungen-bilder {
+    width: 65%;
+  }
+
+  .unsere-lesitungen-berschrift {
+    font-size: 24px;
+  }
+
+  .projekte-section {
+    height: 1150px;
+  }
+
+  .leistungen {
+    margin-top: 31px;
+  }
+
+  .einleitung-projekte-heading {
+    font-size: 24px;
+  }
+
+  .einleitung-projekte {
+    font-size: 14px;
+  }
+
+  .logo-animation {
+    width: 290px;
+  }
+
+  .rezension, .rezension.tobias, .rezension.sw, .rezension.franz, .rezension.bernd {
+    font-size: 15px;
+  }
+
+  .kundenstimenn-berschrift {
+    font-size: 24px;
+  }
+
+  .footer-light {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-copyright {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer-social-block-two {
+    margin-top: 20px;
+  }
+
+  .footer-social-link {
+    margin-left: 20px;
+  }
+
+  .section-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .heading-2 {
+    font-size: 26px;
+  }
+
+  .submit-button, .impressum-datenschutz {
+    font-size: 12px;
+  }
+
+  .logo-footer {
+    width: 80px;
+  }
+
+  .footer {
+    flex-flow: column;
+    display: flex;
+  }
+
+  .div-footer {
+    grid-column-gap: 80px;
+    grid-row-gap: 80px;
+  }
+
+  .container-footer {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projektbilder.erste-reihe, .projektbilder.zweite-reihe, .projektbilder.dritte-reihe {
+    height: 250px;
+  }
+
+  .impressum-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .impressum-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .datenschutz-heading {
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .datenschutz-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .body {
+    object-fit: cover;
+    overflow: visible;
+  }
+
+  .text-block, .text-block-2, .text-block-3 {
+    font-size: 12px;
+  }
+
+  .unsere-leistungen-section {
+    margin-top: -19px;
+  }
+
+  .icon {
+    flex-flow: row;
+  }
+
+  .materialverkauf {
+    font-size: 24px;
+  }
+
+  .unsere-leistungen-seite-bilder {
+    width: 250px;
+    height: 345px;
+  }
+
+  .materialverkauf-absatz {
+    font-size: 13px;
+  }
+
+  .materialverkauf-berschrift {
+    font-size: 32px;
+  }
+
+  .cookie-modal_button-wrap {
+    padding: 1.5rem;
+  }
+
+  .cookie-modal_closebutton {
+    margin-right: 1.25rem;
+  }
+
+  .cookie-modal_content-wrap {
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .fs-cc-banner_container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fs-cc-prefs_title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .fliesen {
+    height: 300px;
+  }
+
+  .ber-uns-absatz {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .ber-uns-berschrift {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  .ber-uns {
+    height: 220px;
+    overflow: hidden;
+  }
+
+  .menu-button {
+    background-color: #000;
+  }
+
+  .image {
+    width: 80px;
+  }
+
+  .unsere-leistungen-absatz {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+  }
+
+  .boden--und-wandfliesen, .renovierungen, .b-der, .treppen {
+    font-size: 16px;
+  }
+
+  .unsere-leistungen-bilder.fliesenverkauf {
+    margin-top: -26px;
+  }
+
+  .unsere-lesitungen-berschrift {
+    margin-top: 11px;
+    font-size: 20px;
+  }
+
+  .projekte-section {
+    height: 840px;
+    overflow: hidden;
+  }
+
+  .leistungen {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 11px;
+  }
+
+  .einleitung-projekte-heading {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .einleitung-projekte {
+    font-size: 12px;
+  }
+
+  .logo-animation {
+    width: 200px;
+  }
+
+  .rezension, .rezension.tobias, .rezension.sw, .rezension.franz, .rezension.bernd {
+    font-size: 11px;
+  }
+
+  .kundenstimenn-berschrift {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .container-7 {
+    max-width: none;
+  }
+
+  .footer-wrapper-two {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-block-two {
+    margin-top: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer-social-block-two {
+    margin-top: 20px;
+  }
+
+  .heading-2 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .submit-button {
+    font-size: 10px;
+  }
+
+  .impressum-datenschutz {
+    font-size: 9px;
+  }
+
+  .logo-footer {
+    width: 65px;
+  }
+
+  .div-footer {
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+  }
+
+  .field-label {
+    font-size: 12px;
+  }
+
+  .projektbilder.erste-reihe, .projektbilder.zweite-reihe, .projektbilder.dritte-reihe {
+    height: 150px;
+  }
+
+  .impressum-text {
+    object-fit: contain;
+    margin-left: 11px;
+    margin-right: 11px;
+    font-size: 12px;
+    overflow: visible;
+  }
+
+  .impressum-heading {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+  }
+
+  .datenschutz-heading {
+    font-size: 18px;
+  }
+
+  .body {
+    overflow: visible;
+  }
+
+  .text-block, .text-block-2, .text-block-3 {
+    font-size: 9px;
+  }
+
+  .unsere-leistungen-section {
+    overflow: hidden;
+  }
+
+  .impressum-body {
+    overflow: visible;
+  }
+
+  .impressum-section {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+
+  .datenschutz-body {
+    overflow: visible;
+  }
+
+  .fliesen-section, .rezensionen-section {
+    overflow: hidden;
+  }
+
+  .materialverkauf {
+    margin-top: -150px;
+    font-size: 16px;
+  }
+
+  .unsere-leistung-seite-berschrift {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .unsere-leistungen-seite-absatz {
+    font-size: 13px;
+  }
+
+  .unsere-leistungen-seite-bilder {
+    width: 250px;
+  }
+
+  .materialverkauf-absatz {
+    font-size: 12px;
+  }
+
+  .materialverkauf-berschrift {
+    font-size: 28px;
+  }
+
+  .cookie-modal_button-wrap.is-small {
+    justify-content: space-between;
+    padding: 1.25rem;
+  }
+
+  .cookie-modal_closebutton {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .cookie-modal_content-wrap.is-small {
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .cookie-popup_component {
+    max-width: 100%;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  .cookie-modal_component {
+    max-width: 100%;
+  }
+
+  .cookie-modal_button {
+    flex: auto;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .fs-cc-prefs_component {
+    padding: 1.5rem;
+  }
+
+  .fs-cc-banner_close {
+    position: absolute;
+    top: -1.5rem;
+    bottom: auto;
+    left: auto;
+    right: .75rem;
+  }
+
+  .fs-cc-prefs_content {
+    padding: 1.5rem;
+  }
+
+  .fs-cc-banner_buttons-wrapper {
+    text-align: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .fs-cc-prefs_button {
+    margin-bottom: .5rem;
+  }
+
+  .fs-cc-banner_button {
+    width: 100%;
+    margin-bottom: .5rem;
+    margin-left: 0;
+  }
+}
+
+#w-node-_2f20b8d8-c61c-22fa-4076-cbecd0b0361b-e12b9afd {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+#w-node-_6c6e2817-a0c1-b09a-2564-560fb104f567-e12b9afd {
+  grid-column: span 2 / span 2;
+}
+
+#w-node-_838c222d-26e8-5c00-e43a-6f32f34cebb3-c918f3d8 {
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#w-node-b9b4f713-a698-77a8-7254-e744b71984c8-b2bb1f37 {
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-_838c222d-26e8-5c00-e43a-6f32f34cebb3-c918f3d8 {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-_838c222d-26e8-5c00-e43a-6f32f34cebb3-c918f3d8 {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_838c222d-26e8-5c00-e43a-6f32f34cebb3-c918f3d8 {
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+
+  #w-node-b9b4f713-a698-77a8-7254-e744b71984c8-b2bb1f37 {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+
